@@ -1,0 +1,83 @@
+local library = loadstring(game:HttpGet("https://raw.githubusercontent.com/lolpoppyus/Roblox-Lua/master/Pop%20UI%20Lib", true))()
+
+local ui = library:Tab("Orb Tree Incremental")
+
+ui:Textbox("Farm Orbs", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "Orb"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Golds", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "Gold"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Diamonds", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "Diamond"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Large", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "Large"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Magma", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "Magma"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Mans", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "Man"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Dark Orbs", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "DarkOrb"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
+
+ui:Textbox("Farm Radioactive Orbs", function(arg)
+for i = 1, arg do
+local args = {
+    [1] = "RadioactiveOrb"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("Remotes"):WaitForChild("Reward"):FireServer(unpack(args))
+end
+end)
